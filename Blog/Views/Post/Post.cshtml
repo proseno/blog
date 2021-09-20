@@ -1,0 +1,17 @@
+@model List<Post>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+@{
+    foreach (var post in Model)
+    {
+        <div>
+            <p>@post.Body.Substring(0, 80)</p>
+            <h5>@post.Author</h5>
+            <hr/>
+        </div>
+    }
+}
