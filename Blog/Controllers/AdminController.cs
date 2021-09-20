@@ -4,8 +4,6 @@ namespace Blog.Controllers
 {
     public class AdminController : Controller
     {
-
-
         public ViewResult Login()
         {
             return View();

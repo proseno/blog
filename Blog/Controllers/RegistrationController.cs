@@ -2,9 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Blog.Controllers
 {
-    public class LoginController : Controller
+    public class RegistrationController : Controller
     {
-        public RedirectResult Login()
+        public RedirectResult Registration()
         {
             return Redirect("~/Admin/Login");
         }
